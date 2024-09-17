@@ -1,0 +1,465 @@
+/* Define CSS Variables */
+/* Define CSS Variables */
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #adb5bd;
+    --gray-dark-color: #505050;
+    --navbar-bg-color: transparent;
+    --navbar-text-color: black;
+    --link-hover-bg-color: #ffffff;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+    --stat-item-text-color: #00d1b2;
+    --stat-item-hover-color: #00ffcc; 
+    --divider-color: #ccc; 
+    --text-light-color: #ddd;
+    --text-dark-color: #ccc; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: "Goudy Bookletter 1911", serif; */
+    font-family: "Rokkitt", serif;
+}
+
+/* header Section Css */
+header {
+    margin-bottom: 1rem;
+}
+
+.navbar {
+    background-color: var(--navbar-bg-color);
+    box-shadow: 0 4px 6px var(--box-shadow-color);
+
+}
+
+.navbar-brand {
+    color: var(--navbar-text-color) !important;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar-nav .nav-link {
+    color: var(--navbar-text-color) !important;
+    margin-right: 1.2rem;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect for links */
+.navbar-nav .nav-link::before,
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link::before {
+    background-color: var(--link-hover-bg-color);
+}
+
+.navbar-nav .nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.icon-spacing {
+    margin-right: 8px;
+}
+
+.custom-toggler-icon {
+    position: relative;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.custom-toggler-icon span {
+    width: 100%;
+    height: 4px;
+    background-color: #cf1b1b;
+    /* Adjust color as needed */
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hamburger to Cross Animation */
+.navbar-toggler.collapsed .custom-toggler-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.navbar-toggler.collapsed .custom-toggler-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler.collapsed .custom-toggler-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.collapse {
+    transition: none;
+}
+
+.navbar-collapse {
+    transition: height 0.4s ease, transform 0.4s ease;
+}
+
+.collapse.show {
+    background-color: #ffffff;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        text-align: left;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 8px;
+    }
+}
+
+/* header Section Css */
+
+
+/* Journal Overview Section */
+.journal-overview-section {
+    width: 100%;
+    padding: 0;
+    background-color: var(--gray-dark-color);
+    color: var(--primary-color); 
+    box-shadow: 0 4px 8px var(--box-shadow-color); 
+}
+.journal-main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: rgba(var(--primary-color-rgb), 0.05);
+}
+.journal-left-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* gap: 1rem; */
+}
+.journal-left-content img {
+    width: 150px;
+    height: 100%;
+    margin-right: 1rem;
+}
+@media (max-width: 991.98px) {
+    .journal-left-content img {
+        display: none;
+    }
+
+}
+.journal-left-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--text-light-color); 
+    position: relative; 
+    overflow: hidden;
+}
+
+.journal-left-content h3::before,
+.journal-left-content h3::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    background-color: var(--primary-color); 
+    transition: width 0.5s ease, background-color 1s ease;
+}
+
+.journal-left-content h3::before {
+    left: 0;
+    bottom: 0;
+}
+
+.journal-left-content h3::after {
+    right: 0;
+    bottom: 0;
+}
+
+.journal-left-content h3:hover::before,
+.journal-left-content h3:hover::after {
+    width: 100%;
+}
+
+.journal-left-content h3:hover {
+    color: var(--stat-item-hover-color); /* Change color on hover */
+}
+
+.journal-left-content p {
+    font-size: 1rem;
+    color: var(--text-light-color);
+}
+
+.journal-right-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--stat-item-text-color);
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    color: var(--text-dark-color);
+    margin-top: 0.25rem;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 40px;
+    background-color: var(--divider-color);
+    margin: 0 0.5rem;
+}
+
+.stat-item h5:hover {
+    color: var(--stat-item-hover-color);
+}
+
+@media (max-width: 768px) {
+    .journal-main-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .journal-right-content {
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .stat-divider {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .journal-left-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .journal-left-content p {
+        font-size: 0.9rem;
+    }
+
+    .stat-item h5 {
+        font-size: 1.25rem;
+    }
+
+    .stat-item p {
+        font-size: 0.8rem;
+    }
+
+    .stat-divider {
+        height: 30px;
+        margin: 0 0.25rem;
+    }
+}
+/* Journal Overview Section */
+
+
+/* About This Journal Section */
+/* General styles for the section */
+.about-this-journal-section {
+    padding: 3rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.about-section-title{
+    text-align: center;
+}
+
+.about-journal-main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Left content styles */
+.about-journal-left-content {
+    flex: 1;
+}
+
+.journal-category {
+    display: block;
+    font-size: 14px;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.journal-title {
+    font
+    margin-bottom: 10px;
+}
+
+.journal-issn {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.publishing-option {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.author-guide p {
+    margin: 5px 0;
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-paper-btn {
+    background-color: #28a745;
+}
+
+.submit-paper-btn:hover {
+    background-color: #218838;
+}
+
+.view-article-btn {
+    background-color: #007bff;
+}
+
+.view-article-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Right content styles */
+.about-journal-right-content {
+    flex: 1;
+}
+
+.author-info {
+    margin-bottom: 20px;
+}
+
+.author-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.author-name {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.paper-short-description {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.read-more-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more-link:hover {
+    text-decoration: underline;
+}
+
+.time-to-decision {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.time-block {
+    flex: 1 1 calc(50% - 15px);
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.time-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.time-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
