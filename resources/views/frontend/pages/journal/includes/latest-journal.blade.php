@@ -12,6 +12,7 @@
                 <h3>lore20Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores magnam vel aperiam assumenda aspernatur, distinctio, in quisquam, ratione molestias laboriosam repellendus minus incidunt temporibus laudantium nemo doloribus tenetur provident adipisci laborum fuga sed omnis. Laudantium!</h3>
                 <span>Research summary or data related to the first topic.</span>
             </div>
+            
             <div class="research-box">
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores magnam vel aperiam assumenda aspernatur, distinctio, in quisquam, ratione molestias laboriosam repellendus minus incidunt temporibus laudantium nemo doloribus tenetur provident adipisci laborum fuga sed omnis. Laudantium!</h3>
                 <span>Research summary or data related to the first topic.</span>
@@ -19,6 +20,7 @@
             <div class="research-box">
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores magnam vel aperiam assumenda aspernatur, distinctio, in quisquam, ratione molestias laboriosam repellendus minus incidunt temporibus laudantium nemo doloribus tenetur provident adipisci laborum fuga sed omnis. Laudantium!</h3>
                 <span>Research summary or data related to the first topic.</span>
+
             </div>
         </div>
 
