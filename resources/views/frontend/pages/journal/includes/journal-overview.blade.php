@@ -1,5 +1,5 @@
 <div class="journal-overview-section">
-    <div class="container">
+    <div class="container-xxl">
         <div class="journal-main-content">
             <div class="journal-left-content">
                 <div class="journal-image">

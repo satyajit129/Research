@@ -1,6 +1,9 @@
 <div class="about-this-journal-section">
     <div class="container-xxl">
-        <h1 class="about-section-title">About This Journal</h1>
+        <div class="text-center">
+            <h1 class="about-section-title">About This Journal</h1>
+        </div>
+        
         <div class="about-journal-main-content">
             <div class="about-journal-left-content">
                 <span class="journal-category">Computer</span>
@@ -8,17 +11,18 @@
                 <h5 class="journal-issn">ISSN No: 0021-9979</h5>
                 <p class="publishing-option">Publishing Option</p>
                 <div class="author-guide">
-                    <p>Guide For Authors</p>
-                    <p>Track your paper</p>
+                    <p>Guide For Authors <i class="fa-solid fa-square-arrow-up-right"></i></p>
+                    <p>Track your paper <i class="fa-solid fa-chevron-down"></i></p>
                 </div>
+                
                 <div class="action-buttons">
                     <button class="btn submit-paper-btn">Submit Paper</button>
-                    <button class="btn view-article-btn">View Article</button>
+                    <button class="btn submit-paper-btn">View Article</button>
                 </div>
             </div>
             <div class="about-journal-right-content">
                 <div class="author-info">
-                    
+                    <img src="https://via.placeholder.com/100" alt="Author Image" class="author-image">
                     <h4 class="author-name">Author Name</h4>
                 </div>
                 <div class="paper-short-description">
@@ -29,11 +33,37 @@
                 <a href="" class="read-more-link">Read more</a>
                 <div class="time-to-decision">
                     <div class="time-block">
-                        <p class="time-label">Time To First Decision</p>
+                        <p class="time-label">
+                            <i class="fa-solid fa-clock"></i> Time To First Decision
+                        </p>
                         <p class="time-value">2.6 weeks</p>
                     </div>
-                    <!-- Repeat .time-block div as needed -->
+                    <div class="time-block">
+                        <p class="time-label">
+                            <i class="fa-solid fa-clock"></i> Time To First Decision
+                        </p>
+                        <p class="time-value">2.6 weeks</p>
+                    </div>
+                    <div class="time-block">
+                        <p class="time-label">
+                            <i class="fa-solid fa-clock"></i> Time To First Decision
+                        </p>
+                        <p class="time-value">2.6 weeks</p>
+                    </div>
+                    <div class="time-block">
+                        <p class="time-label">
+                            <i class="fa-solid fa-clock"></i> Time To First Decision
+                        </p>
+                        <p class="time-value">2.6 weeks</p>
+                    </div>
+                    <div class="time-block">
+                        <p class="time-label">
+                            <i class="fa-solid fa-clock"></i> Time To First Decision
+                        </p>
+                        <p class="time-value">2.6 weeks</p>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </div>
