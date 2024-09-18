@@ -8,7 +8,7 @@
             <div class="about-journal-left-content">
                 <span class="journal-category">Computer</span>
                 <h1 class="journal-title">Computer Simulation and Health Analysis</h1>
-                <h5 class="journal-issn">ISSN No: 0021-9979</h5>
+                <p class="journal-issn">ISSN No: 0021-9979</p>
                 <p class="publishing-option">Publishing Option</p>
                 <div class="author-guide">
                     <p>Guide For Authors <i class="fa-solid fa-square-arrow-up-right"></i></p>

@@ -24,10 +24,15 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link search-toggle" href="#">
                             <i class="fas fa-search icon-spacing"></i> Search
                         </a>
+                        <div class="custom-search-box">
+                            <input type="text" class="custom-search-input" placeholder="Search...">
+                            <button type="submit" class="custom-search-submit">Go</button>
+                        </div>
                     </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fas fa-user icon-spacing"></i> My account

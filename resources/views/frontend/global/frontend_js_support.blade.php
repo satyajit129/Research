@@ -12,3 +12,18 @@
             });
         });
     </script>
+
+    <script>
+        // Toggle search box visibility
+        // Toggle search box visibility
+        document.querySelector('.search-toggle').addEventListener('click', function(event) {
+            event.preventDefault();
+            const navItem = this.closest('.nav-item');
+
+            if (navItem.classList.contains('active')) {
+                navItem.classList.remove('active'); // Close search box
+            } else {
+                navItem.classList.add('active'); // Open search box
+            }
+        });
+    </script>

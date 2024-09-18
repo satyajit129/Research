@@ -14,6 +14,7 @@
 
         @yield('frontend_content')
     
+        @include('frontend.layout.footer')
 
     @include('frontend.global.frontend_js_support')
     @yield('frontend_custom_js')

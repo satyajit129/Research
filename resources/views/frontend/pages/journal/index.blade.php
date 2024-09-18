@@ -9,6 +9,7 @@
     @include('frontend.pages.journal.includes.about-this-journal')
     @include('frontend.pages.journal.includes.latest-journal')
     @include('frontend.pages.journal.includes.editorial-board')
+    @include('frontend.pages.journal.includes.subscribe-section')
 </main>
 @endsection
 
