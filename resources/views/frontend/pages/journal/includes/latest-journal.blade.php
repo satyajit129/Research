@@ -3,7 +3,7 @@
         <div class="text-center">
             <h1 class="about-section-title">Latest Research</h1>
         </div>
-        <div class="float-end" style="padding: 0 1rem; color: #00d1b2">
+        <div class="float-end" style="padding: 0 1rem; color: #00d1b2; cursor: pointer">
             <span >view all</span>
         </div>
         <div class="latest-research-main-content">

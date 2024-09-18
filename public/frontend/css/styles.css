@@ -46,6 +46,9 @@ body {
 header {
     margin-bottom: 1rem;
 }
+.container-xxl {
+    max-width: 90%;
+}
 
 .navbar {
     background-color: var(--navbar-bg-color);
@@ -317,7 +320,7 @@ header {
 /* About This Journal Section */
 .about-this-journal-section {
     padding: 3rem 0;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
 }
 
 .about-section-title {
@@ -329,6 +332,7 @@ header {
     display: inline-block;
     overflow: hidden;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 @media (max-width: 768px) {
@@ -370,7 +374,7 @@ header {
 .about-journal-main-content {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px;
     padding: 1rem;
 }
 
@@ -400,6 +404,7 @@ header {
 .journal-title {
     margin-bottom: 10px;
     font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .journal-issn {
@@ -426,13 +431,13 @@ header {
 
 .author-guide i {
     font-size: 1.2rem;
-    color: #007bff;
+    color: var(--stat-item-text-color);
     transition: transform 0.3s ease;
 }
 
 .author-guide p:hover i {
     transform: translateX(5px);
-    color: #0056b3;
+    /* color: #0056b3; */
 }
 
 /* Buttons */
@@ -471,8 +476,8 @@ header {
 }
 
 .author-image {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -506,7 +511,7 @@ header {
 .read-more-link {
     display: inline-block;
     margin-bottom: 20px;
-    color: #007bff;
+    color: var(--stat-item-text-color);
     font-size: 16px;
     text-decoration: none;
     font-weight: bold;
@@ -516,7 +521,6 @@ header {
     text-decoration: underline;
 }
 
-/* Time to Decision Section */
 .time-to-decision {
     display: flex;
     flex-wrap: wrap;
@@ -528,7 +532,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* padding: 10px; */
     width: calc(33.33% - 10px);
     max-width: 250px;
 }
@@ -545,7 +548,6 @@ header {
 .time-value {
     font-size: 18px;
     color: var(--navbar-text-color);
-    /* margin-top: 5px; */
     font-weight: bold;
 }
 
@@ -573,7 +575,7 @@ header {
 
 .latest-journal-section {
     padding: 3rem 0;
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
 }
 
 
@@ -641,5 +643,111 @@ header {
         flex: 1 1 100%; /* Stack boxes on small screens */
     }
 }
+/* Edetorial Board Section */
+.editorial-board-section{
+    padding: 3rem 0;
+    /* background-color: var(--secondary-color); */
+}
+
+.country-count {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.country {
+    /* flex-basis: 30%;  */
+    text-align: left;
+    /* margin-bottom: 16px; */
+    margin-right: 16px;
+}
+
+.flag {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .country {
+        flex-basis: 50%;
+    }
+    .country-count {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 480px) {
+    .country {
+        flex-basis: 100%; 
+    }
+}
+.view-all-editorial-board {
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center; 
+    color: var(--stat-item-text-color);
+    cursor: pointer;
+}
+
+.view-all-editorial-board i {
+    margin-right: 10px; /* Spacing between icon and text */
+    font-size: 16px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .view-all-editorial-board {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .view-all-editorial-board i {
+        font-size: 14px;
+    }
+}
+.author-education-background {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.author-education-background span {
+    line-height: 1.5;
+    margin-left: 10px; /* Adjust text line height */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .author-education-background {
+        font-size: 14px; /* Smaller text on mobile */
+        padding: 8px 12px;
+    }
+
+    .author-education-background i {
+        font-size: 18px; /* Slightly smaller icon */
+        margin-right: 8px;
+    }
+}
+.author-background-description{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.author-background-description p{
+    text-align: justify;
+    letter-spacing: 1px;
+} 
+
+
+
 
 

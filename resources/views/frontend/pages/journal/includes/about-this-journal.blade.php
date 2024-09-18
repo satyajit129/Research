@@ -23,7 +23,7 @@
             <div class="about-journal-right-content">
                 <div class="author-info">
                     <img src="https://via.placeholder.com/100" alt="Author Image" class="author-image">
-                    <h4 class="author-name">Author Name</h4>
+                    <h4 class="author-name">Si Thu Aung , PHD</h4>
                 </div>
                 <div class="paper-short-description">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis autem debitis esse. Maiores

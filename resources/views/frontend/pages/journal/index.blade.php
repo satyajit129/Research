@@ -8,6 +8,7 @@
     @include('frontend.pages.journal.includes.journal-overview')
     @include('frontend.pages.journal.includes.about-this-journal')
     @include('frontend.pages.journal.includes.latest-journal')
+    @include('frontend.pages.journal.includes.editorial-board')
 </main>
 @endsection
 
