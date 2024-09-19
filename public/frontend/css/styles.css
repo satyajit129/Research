@@ -531,7 +531,15 @@ header {
 .about-journal-right-content {
     flex: 1;
 }
-
+@media (max-width: 768px) {
+    .submit-paper-btn{
+        width: 100%;
+        margin-top: 5px;
+    }
+    .author-guide {
+        flex-direction: column;
+    }
+}
 /* Author Info */
 .author-info {
     display: flex;
@@ -769,7 +777,7 @@ header {
 /* Responsive Design */
 @media (max-width: 768px) {
     .view-all-editorial-board {
-        padding: 8px 16px;
+        /* padding: 8px 16px; */
         font-size: 14px;
     }
 
@@ -814,6 +822,9 @@ header {
 .subscribe-section {
     padding: 3rem 0;
     background-color: #ffe8d6;
+}
+.subscribe-content{
+    padding: 1rem;
 }
 
 /* Heading styles */
@@ -917,7 +928,7 @@ header {
 
 /* footer */
 footer {
-    padding: 40px 0;
+    padding: 3rem 0 0 0;
 }
 
 .footer-content {
