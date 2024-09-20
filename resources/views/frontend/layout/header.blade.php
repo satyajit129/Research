@@ -30,7 +30,9 @@
                         <div class="custom-search-box">
                             <input type="text" class="custom-search-input" placeholder="Search...">
                             <button type="submit" class="custom-search-submit">Go</button>
+                            <button class="custom-search-cancel"><i class="fas fa-times"></i></button>
                         </div>
+                        
                     </li>
                     
                     <li class="nav-item">

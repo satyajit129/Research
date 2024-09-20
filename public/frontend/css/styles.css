@@ -164,12 +164,11 @@ body {
 }
 
 
-/* Custom Search Box Styling for Centering */
 .custom-search-box {
-    position: fixed; /* Fix the search box to the viewport */
+    position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    transform: translate(-50%, -50%); 
     display: flex;
     align-items: center;
     background-color: var(--primary-color);
@@ -206,6 +205,22 @@ body {
     margin-left: 10px;
 }
 
+/* Cancel button styling */
+.custom-search-cancel {
+    background: transparent;
+    border: none;
+    color: var(--blue-color);
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.custom-search-cancel:hover {
+    color: red;
+}
+
 .nav-item.active .custom-search-box {
     opacity: 1;
     visibility: visible;
@@ -220,6 +235,7 @@ body {
 .custom-search-submit:hover {
     background-color: var(--blue-color);
 }
+
 
 
 
