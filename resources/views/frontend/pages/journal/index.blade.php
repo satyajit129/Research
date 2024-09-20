@@ -1,5 +1,5 @@
 @extends('frontend.global.frontend_master')
-
+@section('title', 'Journals')
 @section('frontend_custom_stylesheet')
 @endsection
 

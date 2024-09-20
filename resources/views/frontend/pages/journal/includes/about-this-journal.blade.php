@@ -16,8 +16,8 @@
                 </div>
                 
                 <div class="action-buttons">
-                    <button class="btn submit-paper-btn">Submit Paper</button>
-                    <button class="btn submit-paper-btn">View Article</button>
+                    <a class="btn submit-paper-btn">Submit Paper</a>
+                    <a href="{{ route('viewArticle') }}" class="btn submit-paper-btn">View Article</a>
                 </div>
             </div>
             <div class="about-journal-right-content">

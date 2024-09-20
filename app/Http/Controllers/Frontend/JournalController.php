@@ -11,4 +11,7 @@ class JournalController extends Controller
     {
         return view('frontend.pages.journal.index');
     }
+    public function viewArticle(){
+        return view('frontend.pages.journal.view-article');
+    }
 }

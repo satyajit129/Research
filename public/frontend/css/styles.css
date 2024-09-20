@@ -6,13 +6,14 @@
     --gray-dark-color: #505050;
     --navbar-bg-color: transparent;
     --navbar-text-color: black;
-    --link-hover-bg-color: #ffffff;
     --box-shadow-color: #0000001a;
     --stat-item-text-color: #00d1b2;
     --stat-item-hover-color: #00ffcc; 
     --divider-color: #ccc; 
     --text-light-color: #ddd;
-    --text-dark-color: #ccc; 
+    --text-dark-color: #ccc;
+    --font-size-12-px : 14px;
+    --blue-color : #00d1b2;
 }
 
 * {
@@ -45,9 +46,7 @@ body {
 }
 
 /* header Section Css */
-header {
-    margin-bottom: 1rem;
-}
+
 .container-xxl {
     max-width: 90%;
 }
@@ -67,6 +66,7 @@ header {
 /* Navbar Links */
 .navbar-nav .nav-item {
     position: relative;
+    font-size: 14px;
 }
 
 .navbar-nav .nav-link {
@@ -93,7 +93,7 @@ header {
 }
 
 .navbar-nav .nav-link::before {
-    background-color: var(--link-hover-bg-color);
+    background-color: var(--primary-color);
 }
 
 .navbar-nav .nav-link:hover::before {
@@ -150,7 +150,7 @@ header {
 }
 
 .collapse.show {
-    background-color: #ffffff;
+    background-color: var(--primary-color);
 }
 
 @media (max-width: 991.98px) {
@@ -172,8 +172,8 @@ header {
     transform: translate(-50%, -50%); /* Center horizontally and vertically */
     display: flex;
     align-items: center;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     border-radius: 4px;
     padding: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -192,13 +192,13 @@ header {
     font-size: 16px;
     outline: none;
     transition: width 0.3s ease-in-out;
-    border-bottom: 2px solid #007BFF;
+    border-bottom: 2px solid var(--blue-color);
 }
 
 /* Custom Button Styling */
 .custom-search-submit {
-    background-color: #007BFF;
-    color: #fff;
+    background-color: var(--blue-color);
+    color: var(--primary-color);
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -218,7 +218,7 @@ header {
 
 /* Button hover effect */
 .custom-search-submit:hover {
-    background-color: #0056b3;
+    background-color: var(--blue-color);
 }
 
 
@@ -299,7 +299,7 @@ header {
 }
 
 .journal-left-content p {
-    font-size: 1rem;
+    font-size: var(--font-size-12-px);
     color: var(--text-light-color);
 }
 
@@ -311,9 +311,7 @@ header {
     flex-wrap: wrap;
 }
 
-.stat-item {
-    text-align: center;
-}
+
 
 .stat-item h5 {
     font-size: 1.5rem;
@@ -322,7 +320,7 @@ header {
 }
 
 .stat-item p {
-    font-size: 0.9rem;
+    font-size: 14px;    
     color: var(--text-light-color);
     margin-top: 0.25rem;
 }
@@ -457,7 +455,7 @@ header {
 .journal-category {
     display: inline-block;
     font-size: 8px;
-    color: #fff;
+    color: var(--primary-color);
     background-color: var(--navbar-text-color);
     font-weight: bold;
     padding: 5px 7px;
@@ -472,7 +470,7 @@ header {
 }
 
 .journal-issn {
-    /* font-size: 20px; */
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
@@ -510,7 +508,7 @@ header {
 }
 
 .btn {
-    padding: 10px 25px;
+    padding: 10px 30px;
     border: none;
     border-radius: 0;
     cursor: pointer;
@@ -538,6 +536,10 @@ header {
     }
     .author-guide {
         flex-direction: column;
+    }
+    .journal-title{
+        /* text-align: center; */
+        font-size: 16px;
     }
 }
 /* Author Info */
@@ -577,6 +579,9 @@ header {
     margin-bottom: 20px;
     color: var(--navbar-text-color);
     text-align: justify;
+}
+.paper-short-description p{
+    font-size: 14px;
 }
 
 /* Read More Link */
@@ -618,7 +623,7 @@ header {
 }
 
 .time-value {
-    font-size: 18px;
+    font-size: 14px;
     color: var(--navbar-text-color);
     font-weight: bold;
 }
@@ -673,7 +678,7 @@ header {
 
 .research-box {
     flex: 1 1 calc(33.333% - 2rem); 
-    border: 1px solid #ccc;
+    border: 1px solid var(--primary-color);
     padding: 1.5rem;
     box-sizing: border-box;
     border-radius: 0; 
@@ -685,21 +690,22 @@ header {
     margin-top: 0;
     color: var(--navbar-text-color);
     text-align: justify;
+    font-size: 14px;
 }
 
 .research-box span {
-    font-size: 14px;
+    font-size: 12px;
     color: var(--stat-item-text-color);
     display: block;
     margin-top: 0.5rem;
 }
 .research-box:hover {
     background-color: #000; 
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .research-box:hover p {
-    color: #fff; 
+    color: var(--primary-color); 
 }
 
 
@@ -734,6 +740,9 @@ header {
     /* margin-bottom: 16px; */
     margin-right: 16px;
 }
+.country span{
+    font-size: 14px;
+}
 
 .flag {
     width: 30px;
@@ -745,7 +754,7 @@ header {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .country {
-        flex-basis: calc(50% - 20px);
+        flex-basis: calc(100% - 20px);
     }
     .country-count {
         margin-top: 20px;
@@ -794,7 +803,8 @@ header {
 
 .author-education-background span {
     line-height: 1.5;
-    margin-left: 10px; /* Adjust text line height */
+    margin-left: 10px;
+    font-size: 14px;
 }
 
 /* Responsive Design */
@@ -816,6 +826,7 @@ header {
 .author-background-description p{
     text-align: justify;
     letter-spacing: 1px;
+    font-size: 14px;
 }
 /* Subscribe Section */
 /* General Styles */
@@ -847,7 +858,7 @@ header {
     width: 400px; /* Initial width for larger screens */
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--primary-color);
     /* border-radius: 4px; */
     transition: border-color 0.3s ease-in-out, width 0.3s ease-in-out;
 }
@@ -863,7 +874,7 @@ header {
 .subscribe-button {
     padding: 10px 40px;
     background-color: var(--stat-item-text-color);
-    color: #fff;
+    color: var(--primary-color);
     border: none;
     /* border-radius: 4px; */
     font-size: 16px;
@@ -874,7 +885,7 @@ header {
 
 /* Button hover effect */
 .subscribe-button:hover {
-    background-color: #0056b3;
+    background-color: var(--blue-color);
 }
 
 /* Responsive styles for medium screens (up to 992px) */
@@ -914,7 +925,7 @@ header {
 /* Responsive behavior for small mobile devices (up to 576px) */
 @media (max-width: 576px) {
     .subscribe-heading h1 {
-        font-size: 24px; /* Reduce heading size for small screens */
+        font-size: 16px;
     }
 
     .subscribe-button {
@@ -950,7 +961,7 @@ footer {
 }
 
 .social-icons a {
-    color: #ddd;
+    color: var(--primary-color);
     font-size: 10px;
     margin-right: 15px;
     display: inline-block;
@@ -963,7 +974,7 @@ footer {
 
 .social-icons a:hover {
    background-color: var(--stat-item-text-color);
-   color: #fff;
+   color: var(--primary-color);
 }
 
 /* Adjust spacing for mobile */
@@ -1005,7 +1016,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: #007BFF; /* Change link color on hover */
+    color: var(--blue-color); /* Change link color on hover */
 }
 
 /* Responsive Behavior */
@@ -1022,20 +1033,19 @@ footer {
 /* General Styling for Copyright Section */
 .copy-right {
     background-color: var(--stat-item-text-color); 
-    color: #fff; 
-    padding: 15px 0; 
+    color: var(--primary-color); 
+    padding: 10px 0; 
     text-align: center; 
-    font-size: 14px; 
 }
 
 .copy-right p {
     margin: 0; 
-    font-size: 14px; 
+    font-size: 10px; 
     letter-spacing: 0.5px; 
 }
 
 .copy-right a {
-    color: #007BFF;
+    color: var(--blue-color);
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
@@ -1048,6 +1058,134 @@ footer {
 @media (max-width: 768px) {
     .copy-right {
         font-size: 12px; 
+    }
+}
+
+/*  Log in Design */
+
+.container-bg {
+    background: black
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.login-content {
+    width: 600px;
+    margin: 2.5rem 0;
+}
+
+.login-content h5 {
+    text-align: left;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.login-content .input {
+    width: 100%;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    color: black;
+}
+
+input::placeholder {
+    font-size: 12px;
+
+}
+
+.remember-me-forgot-password {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 12px;
+}
+
+.remember-me span {
+    margin-left: 5px;
+    font-size: 10px;
+}
+.remember-me a{
+    color: var(--stat-item-hover-color);
+}f.time-value
+
+.forgot-password {
+    color: var(--primary-color);
+    font-size: 12px;
+}
+
+.forgot-password a {
+    font-size: 10px;
+    color: var(--stat-item-hover-color);
+}
+
+.sign-up {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.sign-up span {
+    font-size: 10px;
+    color: var(--primary-color);
+}
+
+.sign-up a {
+    font-size: 10px;
+    color: var(--stat-item-hover-color);
+}
+
+.submit-btn {
+    padding: 5px 30px;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--stat-item-hover-color);
+    border-radius: 0px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sign-up-link {
+    color: var(--stat-item-hover-color);
+}
+
+.submit-btn:hover {
+    background-color: var(--stat-item-hover-color);
+    color: black;
+}
+
+.orcid-login {
+    font-size: 10px;
+}
+
+.orcid-login i {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+    /* padding: 5px; */
+    color: #a6ce39;
+}
+
+.orcid-login a {
+    color: var(--stat-item-hover-color);
+}
+
+@media (max-width: 768px) {
+    .sign-up {
+        flex-direction: column;
     }
 }
 
