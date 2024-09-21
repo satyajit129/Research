@@ -5,7 +5,7 @@
 
 @section('frontend_content')
     <main class="container-bg">
-        <div class="containercontainer-bg">
+        <div class="container container-bg">
             <div class="login-box">
                 <div class="login-content">
                     <h5>SIGN IN</h5>

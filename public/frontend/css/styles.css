@@ -1056,7 +1056,7 @@ footer {
 
 .copy-right p {
     margin: 0; 
-    font-size: 10px; 
+    font-size: 12px; 
     letter-spacing: 0.5px; 
 }
 
@@ -1080,7 +1080,12 @@ footer {
 /*  Log in Design */
 
 .container-bg {
-    background: black
+    background: black;
+    display: flex;
+    background: black;
+    height: 69vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-box {
@@ -1092,8 +1097,8 @@ footer {
 }
 
 .login-content {
-    width: 600px;
-    margin: 2.5rem 0;
+    max-width: 600px;
+    width: 100%;
 }
 
 .login-content h5 {
