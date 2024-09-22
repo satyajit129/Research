@@ -6,13 +6,9 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const navbarToggler = document.querySelector(".navbar-toggler");
-    
-            // Toggle navbar collapse
             navbarToggler.addEventListener("click", function() {
                 this.classList.toggle("collapsed");
             });
-    
-            // Toggle search box visibility
             document.querySelector('.search-toggle').addEventListener('click', function(event) {
                 event.preventDefault();
                 const navItem = this.closest('.nav-item');
@@ -23,8 +19,6 @@
                     navItem.classList.add('active'); 
                 }
             });
-    
-            // Hide search box when cancel button is clicked
             const cancelBtn = document.querySelector('.custom-search-cancel');
             cancelBtn.addEventListener('click', function() {
                 const navItem = this.closest('.nav-item');

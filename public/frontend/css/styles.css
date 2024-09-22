@@ -37,6 +37,7 @@ ol,
 li {
     margin: 0;
     padding: 0;
+    line-height: 1.1;
 }
 
 body {
@@ -243,7 +244,8 @@ body {
 
 
 /* Journal Overview Section */
-.journal-overview-section {
+.journal-overview-section,
+.view-article-hero {
     width: 100%;
     padding: 0;
     background-color: var(--gray-dark-color);
@@ -396,7 +398,6 @@ body {
 /* About This Journal Section */
 .about-this-journal-section {
     padding: 3rem 0;
-    /* background-color: var(--secondary-color); */
 }
 
 .about-section-title {
@@ -468,15 +469,15 @@ body {
     flex: 1;
 }
 
-.journal-category {
+.journal-category ,
+.view-article-category-top {
     display: inline-block;
     font-size: 8px;
     color: var(--primary-color);
     background-color: var(--navbar-text-color);
     font-weight: bold;
-    padding: 5px 7px;
+    padding: 1px 2px;
     text-transform: uppercase;
-    margin-bottom: 10px;
 }
 
 .journal-title {
@@ -630,29 +631,29 @@ body {
 }
 
 .time-label {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
     display: flex;
     align-items: center;
     gap: 5px;
-    color: #343a40;
+    /* color: #343a40; */
 }
 
 .time-value {
-    font-size: 14px;
-    color: var(--navbar-text-color);
+    font-size: 10px;
+    /* color: var(--navbar-text-color); */
     font-weight: bold;
 }
 
 @media (min-width: 769px) {
     .time-block {
-        width: calc(33.33% - 10px); /* Adjust width as needed */
+        width: calc(33.33% - 10px);
     }
 }
 
 @media (max-width: 768px) and (min-width: 577px) {
     .time-block {
-        width: calc(33.33% - 10px); /* Adjust width as needed */
+        width: calc(33.33% - 10px);
     }
 }
 
@@ -668,7 +669,6 @@ body {
 
 .latest-journal-section {
     padding: 3rem 0;
-    /* background-color: #f5f5f5; */
 }
 
 
@@ -676,7 +676,6 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* gap: 1rem; */
     padding: 1rem;
 }
 
@@ -698,7 +697,7 @@ body {
     padding: 1.5rem;
     box-sizing: border-box;
     border-radius: 0; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 4px #0000001a; 
     transition: background-color 0.5s, color 0.3s; 
 }
 
@@ -733,13 +732,12 @@ body {
 
 @media (max-width: 480px) {
     .research-box {
-        flex: 1 1 100%; /* Stack boxes on small screens */
+        flex: 1 1 100%; 
     }
 }
 /* Edetorial Board Section */
 .editorial-board-section{
     padding: 3rem 0;
-    /* background-color: var(--secondary-color); */
 }
 
 .country-count {
@@ -751,9 +749,7 @@ body {
 }
 
 .country {
-    /* flex-basis: 30%;  */
     text-align: left;
-    /* margin-bottom: 16px; */
     margin-right: 16px;
 }
 .country span{
@@ -793,16 +789,12 @@ body {
 }
 
 .view-all-editorial-board i {
-    margin-right: 10px; /* Spacing between icon and text */
+    margin-right: 10px;
     font-size: 16px;
 }
 
-
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .view-all-editorial-board {
-        /* padding: 8px 16px; */
         font-size: 14px;
     }
 
@@ -823,15 +815,14 @@ body {
     font-size: 14px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .author-education-background {
-        font-size: 14px; /* Smaller text on mobile */
+        font-size: 14px;
         padding: 8px 0;
     }
 
     .author-education-background i {
-        font-size: 18px; /* Slightly smaller icon */
+        font-size: 18px;
         margin-right: 8px;
     }
 }
@@ -844,7 +835,6 @@ body {
     letter-spacing: 1px;
     font-size: 14px;
 }
-/* Subscribe Section */
 /* General Styles */
 .subscribe-section {
     padding: 3rem 0;
@@ -866,16 +856,15 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    gap: 10px; /* Ensures proper spacing between input and button */
+    gap: 10px;
 }
 
 /* Input field styling */
 .subscribe-input {
-    width: 400px; /* Initial width for larger screens */
+    width: 400px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid var(--primary-color);
-    /* border-radius: 4px; */
     transition: border-color 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 
@@ -883,7 +872,7 @@ body {
 .subscribe-input:focus {
     border-color: var(--stat-item-text-color);
     outline: none;
-    width: 450px; /* Slight width increase on focus */
+    width: 450px;
 }
 
 /* Button styling */
@@ -892,11 +881,10 @@ body {
     background-color: var(--stat-item-text-color);
     color: var(--primary-color);
     border: none;
-    /* border-radius: 4px; */
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap;
 }
 
 /* Button hover effect */
@@ -904,19 +892,15 @@ body {
     background-color: var(--blue-color);
 }
 
-/* Responsive styles for medium screens (up to 992px) */
 @media (max-width: 992px) {
     .subscribe-input {
         width: 100%;
-        /* max-width: 400px;  */
         margin-right: 10px;
     }
     .subscribe-button {
-        padding: 10px 30px; /* Slightly reduce button padding */
+        padding: 10px 30px;
     }
 }
-
-/* Responsive behavior for tablet and smaller devices (up to 768px) */
 @media (max-width: 768px) {
     .subscribe-form-section {
         flex-direction: column;
@@ -937,8 +921,6 @@ body {
         width: 100%;
     }
 }
-
-/* Responsive behavior for small mobile devices (up to 576px) */
 @media (max-width: 576px) {
     .subscribe-heading h1 {
         font-size: 16px;
@@ -966,26 +948,23 @@ footer {
 }
 
 .footer-section {
-    /* flex: 1; */
     margin: 0 15px; 
-    /* min-width: 200px; */
 }
 
-/* Social Icons Styling */
 .social-icons {
     margin-top: 15px;
 }
 
 .social-icons a {
     color: var(--primary-color);
-    font-size: 10px;
-    margin-right: 15px;
+    font-size: 7px;
+    margin-right: 6px;
     display: inline-block;
     transition: color 0.3s ease;
     text-decoration: none;
     background-color: #000;
     border-radius: 50%;
-    padding: 5px 8px;
+    padding: 3px 5px;
 }
 
 .social-icons a:hover {
@@ -993,7 +972,6 @@ footer {
    color: var(--primary-color);
 }
 
-/* Adjust spacing for mobile */
 @media (max-width: 768px) {
     .social-icons {
         text-align: left;
@@ -1014,7 +992,6 @@ footer {
     font-weight: 600;
 }
 
-/* Footer Links */
 .footer-section ul {
     list-style: none;
     padding: 0;
@@ -1032,21 +1009,19 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: var(--blue-color); /* Change link color on hover */
+    color: var(--blue-color);
 }
 
-/* Responsive Behavior */
 @media (max-width: 768px) {
     .footer-content {
-        flex-direction: column; /* Stack sections on top of each other on smaller screens */
+        flex-direction: column; 
         text-align: left;
     }
 
     .footer-section {
-        margin-bottom: 30px; /* Add space between stacked sections */
+        margin-bottom: 30px; 
     }
 }
-/* General Styling for Copyright Section */
 .copy-right {
     background-color: var(--stat-item-text-color); 
     color: var(--primary-color); 
@@ -1076,8 +1051,6 @@ footer {
         font-size: 12px; 
     }
 }
-
-/*  Log in Design */
 
 .container-bg {
     background: black
@@ -1191,7 +1164,6 @@ input::placeholder {
     margin-left: 5px;
     margin-right: 5px;
     font-size: 12px;
-    /* padding: 5px; */
     color: #a6ce39;
 }
 
@@ -1204,6 +1176,112 @@ input::placeholder {
         flex-direction: column;
     }
 }
+
+/* View Article Section */
+/* Base styles for desktop or larger screens (keep as is) */
+.view-artical-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 1rem;
+}
+.view-artical-left-section,
+.view-artical-right-section {
+    flex: 1;
+}
+.view-article-category-bottom {
+    font-size: 8px;
+    display: block;
+}
+.view-artical-author {
+    margin-bottom: 5px;
+}
+.view-artical-author span {
+    font-size: 8px;
+    color: var(--stat-item-text-color);
+}
+.view-artical-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 1rem;
+}
+.view-artical-bottom-content-left span {
+    display: block;
+    font-size: 10px;
+    text-align: left;
+}
+.view-artical-bottom-content-right span {
+    display: block;
+    font-size: 10px;
+    text-align: right;
+}
+.doi {
+    display: inline-block;
+    font-size: 8px;
+    color: var(--navbar-text-color);
+    background-color: var(--primary-color);
+    font-weight: bold;
+    padding: 1px 1px;
+    margin-right: 2px;
+    text-transform: uppercase;
+}
+.open-access::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--stat-item-text-color);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* Mobile-Responsive Styles */
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+    .view-artical-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0.5rem;
+    }
+
+    .view-artical-left-section,
+    .view-artical-right-section {
+        flex: none;
+        width: 100%;
+    }
+
+    .view-article-category-bottom,
+    .view-artical-author span {
+        font-size: 10px;
+    }
+
+    .view-artical-bottom-content {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0.5rem;
+    }
+
+    .view-artical-bottom-content-left span,
+    .view-artical-bottom-content-right span {
+        font-size: 8px;
+        text-align: left;
+    }
+
+    .social-icons a {
+        font-size: 8px;
+    }
+
+
+
+    .doi {
+        font-size: 6px;
+        padding: 0.5px 1px;
+    }
+}
+
+
 
 
 
