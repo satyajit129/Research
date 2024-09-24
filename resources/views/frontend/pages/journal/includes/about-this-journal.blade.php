@@ -20,9 +20,9 @@
                     <a href="{{ route('viewArticle') }}" class="btn submit-paper-btn">View Article</a>
                 </div>
             </div>
-            <div class="about-journal-right-content">
+            <div class="about-journal-right-content" style="flex-direction: column;">
                 <div class="author-info">
-                    <img src="https://via.placeholder.com/100" alt="Author Image" class="author-image">
+                    <img src="{{ asset('frontend/image/Capture.PNG') }}" alt="Author Image" class="author-image">
                     <h4 class="author-name">Si Thu Aung , PHD</h4>
                 </div>
                 <div class="paper-short-description">

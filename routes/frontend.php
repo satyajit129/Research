@@ -8,9 +8,11 @@ Route::get('/sign-in',[\App\Http\Controllers\Authentication\AuthenticationContro
 Route::get('/sign-up',[\App\Http\Controllers\Authentication\AuthenticationController::class,'signUp'])->name('signUp');
 
 
-Route::get('/',[JournalController::class,'journalIndex'])->name('journalIndex');
+Route::get('/journal-index',[JournalController::class,'journalIndex'])->name('journalIndex');
 Route::get('/view-article',[JournalController::class,'viewArticle'])->name('viewArticle');
-
+Route::get('view-editorial-board',[JournalController::class,'viewEditorialBoard'])->name('viewEditorialBoard');
+Route::get('/all-journals',[JournalController::class,'allJournals'])->name('allJournals');
+Route::get('/',[JournalController::class,'allJournals'])->name('allJournals');
 
 
 

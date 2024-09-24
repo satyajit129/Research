@@ -14,4 +14,11 @@ class JournalController extends Controller
     public function viewArticle(){
         return view('frontend.pages.journal.view-article');
     }
+
+    public function viewEditorialBoard(){
+        return view('frontend.pages.journal.editorial-board-content');
+    }
+    public function allJournals(){
+        return view('frontend.pages.journal.all-journals');
+    }
 }
