@@ -34,7 +34,7 @@
                 <div class="time-to-decision">
                     <div class="time-block">
                         <p class="time-label">
-                            <i class="fa-solid fa-clock"></i> Time To First Decision
+                            <i class="fa-solid fa-chart-line"></i> Top Readership
                         </p>
                         <p class="time-value">2.6 weeks</p>
                     </div>
@@ -46,19 +46,19 @@
                     </div>
                     <div class="time-block">
                         <p class="time-label">
-                            <i class="fa-solid fa-clock"></i> Time To First Decision
+                            <i class="fa-solid fa-clock"></i> Review Time
                         </p>
                         <p class="time-value">2.6 weeks</p>
                     </div>
                     <div class="time-block">
                         <p class="time-label">
-                            <i class="fa-solid fa-clock"></i> Time To First Decision
+                            <i class="fa-solid fa-clock"></i> Publication Time
                         </p>
                         <p class="time-value">2.6 weeks</p>
                     </div>
                     <div class="time-block">
                         <p class="time-label">
-                            <i class="fa-solid fa-clock"></i> Time To First Decision
+                            <i class="fa-solid fa-clock"></i> Article Publishing charge
                         </p>
                         <p class="time-value">2.6 weeks</p>
                     </div>

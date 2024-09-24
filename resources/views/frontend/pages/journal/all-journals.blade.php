@@ -2,7 +2,9 @@
 @section('title', 'Journals')
 @section('frontend_custom_stylesheet')
     <style>
-        
+        .margin-bottom{
+            margin-bottom: 10px;
+        }
     </style>
 @endsection
 
@@ -102,41 +104,36 @@
                     </div>
                     <a href="{{ route('journalIndex') }}">
                         <div class="journal-list-div">
-                            <p class="journal-category">Article </p>
-                            
+                            <p class="journal-category margin-bottom">Article </p>
                             <h5>Lorem ipiorupti voluptas aperiam dolore fafdgdfgdfgdfgdfcere aut obcaecati nam </h5>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempor velit deleniti iure doloremque!</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempor velit deleniti iure doloremque! &nbsp; <span class="open-access">Open access</span></span>
                         </div>
                     </a>
                     
                     <a href="{{ route('journalIndex') }}">
                         <div class="journal-list-div">
-                            <p class="journal-category">Artificial Intelligence</p>
-                            
+                            <p class="journal-category margin-bottom">Artificial Intelligence</p>
                             <h5>Lorem ipiorupti voluptas aperidfgdfgdfgdfgdfam dolore facere aut obcaecati nam </h5>
                             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempor velit deleniti iure doloremque!</span>
                         </div>
                     </a>
                     <a href="{{ route('journalIndex') }}">
                         <div class="journal-list-div">
-                            <p class="journal-category">Machine Learning</p>
-                            
+                            <p class="journal-category margin-bottom">Machine Learning</p>
                             <h5>Lorem ipiorfdgdfgdfupti voluptas aperiam dfdgdfgdfgolore facere aut obcaecati nam </h5>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempor velit deleniti iure doloremque!</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempor velit deleniti iure doloremque! &nbsp; <span class="open-access">open access</span></span>
                         </div>
-                    </a>
+                    </a >
                     <a href="{{ route('journalIndex') }}">
                         <div class="journal-list-div">
-                            <p class="journal-category">Article</p>
-                            
+                            <p class="journal-category margin-bottom">Article</p>
                             <h5>Lorem ipiorupti voluptas aperiam dolore dfgdfgdfgdfgdffacere aut obcaecati nam </h5>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempor velit deleniti iure doloremque!</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempor velit deleniti iure doloremque! &nbsp; <span class="open-access">open access</span></span>
                         </div>
                     </a>
                     <a href="{{ route('journalIndex') }}">
                         <div class="journal-list-div">
-                            <p class="journal-category">Article</p>
-                            
+                            <p class="journal-category margin-bottom">Article</p>
                             <h5>Lorem ipdffdgdfggdfgdfiorupti voluptas aperiam dolore facere aut obcaecati nam </h5>
                             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempor velit deleniti iure doloremque!</span>
                         </div>

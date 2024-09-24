@@ -1,10 +1,8 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('journalIndex') }}">ScienceDirect</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <a class="navbar-brand" href="{{ route('allJournals') }}">ScienceDirect</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="custom-toggler-icon">
                     <span></span>
                     <span></span>
@@ -32,9 +30,9 @@
                             <button type="submit" class="custom-search-submit">Go</button>
                             <button class="custom-search-cancel"><i class="fas fa-times"></i></button>
                         </div>
-                        
+
                     </li>
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <i class="fas fa-user icon-spacing"></i> My account
